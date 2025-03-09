@@ -24,6 +24,27 @@ if prime(num):
 else:
     print(f"{num} is not a prime number")
 
+# 3 Write a program to check if a number is an Armstrong number.
+def arm(n):
+    num = n
+    sum = 0
+    length = len(str(num))
+
+    while num >0:
+        digit = num % 10
+        sum += digit ** length
+        num//=10
+      
+    return sum == n
+
+nums = int(input("Enter the number : "))
+if arm(nums):
+    print(f"{nums} is a armstrong number")
+else:
+    print(f"{nums} is not a armstrong number")
+
+# 4 Write a program to generate the Fibonacci series up to a given number.
+
 
 
 
