@@ -159,3 +159,24 @@
 # result = array_sum(arr)
 # print("Sum of elements : ", result)
 
+# 12 Write a program to find the GCD of two numbers
+# def gcd(num1,num2):
+#     while num2:
+#         num1,num2 = num2 , num1 % num2
+#     return num1
+
+# num1,num2  = map(int,(input("Enter two numbers :").split()))
+# result = gcd(num1,num2)
+# print(f"GCD of {num1} and {num2} is {result}")
+
+# 13 Write a program to generate multiplication tables for a given number.
+
+# def table(n):
+#     for i in range(1,11):
+#         print(f"{n} X {i} = {n*i}")
+
+
+# table(5)
+
+
+
