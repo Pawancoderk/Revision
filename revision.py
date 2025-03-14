@@ -115,35 +115,47 @@
 
 # 9 Write a program to reverse a given string.
 
-def rev(n):
-    reversed_str= ""
-    for char in n:
-        reversed_str =  char + reversed_str
-    return reversed_str
+# def rev(n):
+#     reversed_str= ""
+#     for char in n:
+#         reversed_str =  char + reversed_str
+#     return reversed_str
 
-str = input("Enter the string : ")
-print(f" reversed string is {rev(str)}")
+# str = input("Enter the string : ")
+# print(f" reversed string is {rev(str)}")
 
 # 10 Write a program to find the largest and smallest numbers in an array
 
-
-
-
-
-
-
-
-
-
-
+# def find_largest_smallest(arr):
+#     if not arr:
+#         return None
     
+#     smallest = largest = arr[0]
 
+#     for num in arr:
+#         if num < smallest:
+#             smallest = num
+#         if num > largest:
+#             largest = num
+            
+#     return smallest, largest
 
+# numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+# if numbers:
+#     smallest, largest = find_largest_smallest(numbers)
+#     print(f"Smallest: {smallest}, Largest: {largest}")
+# else:
+#     print("Error:No number was entered.")
 
+# 11 Write a program to find the sum of elements in an array
 
+# def array_sum(arr):
+#     total = 0
+#     for num in arr:
+#         total+=num
+#     return total
 
-
-
-
-
+# arr = list(map(int,(input("Enter the array :").split())))
+# result = array_sum(arr)
+# print("Sum of elements : ", result)
 
