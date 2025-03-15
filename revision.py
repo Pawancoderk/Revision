@@ -177,6 +177,31 @@
 
 
 # table(5)
+# 14 Write a program to find the sum of all even numbers within a given range
+# def sum_of_even(start,end):
+#     total = 0
+#     for i in range(start,end+1):
+#         if i % 2 ==0:
+#             total +=i
+#     return total
 
+# start = int(input("Enter the start of the range: "))
+# end = int(input("Enter the end of the range: "))
 
+# result = sum_of_even(start,end)
+# print(f"Sum of even numbers between {start} and {end} = {result}")
+
+# 15 Write a program to find the sum of all odd numbers within a given range
+# def sum_of_odd(start,end):
+#     total = 0
+#     for i in range(start,end+1):
+#         if i % 2 !=0:
+#             total +=i
+#     return total
+
+# start = int(input("Enter the start of the range: "))
+# end = int(input("Enter the end of the range: "))
+
+# result = sum_of_odd(start,end)
+# print(f"Sum of odd numbers between {start} and {end} = {result}")
 
