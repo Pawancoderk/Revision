@@ -61,6 +61,7 @@
 #     length = len(n)
 #     left = 0
 #     right = length -1 
+#     print(length)
 #     while(left<right):
 #         if n[left] != n[right]:
 #             return False
@@ -69,9 +70,9 @@
 #     return True
 # string = input("Enter the string : ")
 # if palidrome(string):
-#     print(f"{string} is palindrome")
+#     print(f"{string} is a  palindrome")
 # else:
-#     print(f"{string} is not palindrome")
+#     print(f"{string} is not a  palindrome")
 
 # 6 Write a program to create different star patterns (e.g., pyramid, diamond)
 
@@ -204,4 +205,82 @@
 
 # result = sum_of_odd(start,end)
 # print(f"Sum of odd numbers between {start} and {end} = {result}")
+
+# 16 Write a program to find all prime numbers within a given range
+# def is_prime(n):
+#     if n < 2:
+#         return False
+#     for i in range(2,n):
+#         if n % i == 0:
+#             return False
+#     return True
+
+# start = int(input("Enter the start of the range: "))
+# end = int(input("Enter the end of the range: "))
+
+# print("Prime numbers:", [num for num in range(start, end + 1) if is_prime(num)])
+
+
+# 17 Write a program to determine if a number is a perfect number
+
+# def is_perfect(n):
+#     sum_of_divisors = 0
+#     if n<=1:
+#         return False
+    
+#     for i in range(1,n):
+#         if n % i == 0:
+#             sum_of_divisors +=i
+#     return sum_of_divisors == n
+
+# num = int(input("Enter the number : "))
+# if is_perfect(num):
+#     print(f"{num} is a perfect number")
+# else:
+#     print(f"{num} is not a perfect number")
+
+# 18 Write a program to find the sum of all even numbers within a given range
+
+# def sum_of_num(n):
+#     total = 0
+#     for i in range(1,n+1):
+#         if i % 2 == 0:
+#             total +=i
+#     return total
+
+# num = int(input("Enter the number : "))
+# result = sum_of_num(num)
+# print(f"The sum of even number are in range of 1 to {num}  = {result}")
+
+# 19 Write a program to find the sum of all odd numbers within a given range
+
+# def sum_of_num(n):
+#     total = 0
+#     for i in range(1,n+1):
+#         if i % 2 != 0:
+#             total +=i
+#     return total
+
+# num = int(input("Enter the number : "))
+# result = sum_of_num(num)
+# print(f"The sum of even number are in range of 1 to {num}  = {result}")
+
+# 20 Write a program to print all prime numbers less than a given number
+
+def is_prime(n):
+    if n<2:
+        return False
+    for i in range(2,int(n ** 0.5)+1):
+        if n % i == 0:
+            return False
+    return True
+
+def is_less_prime(limit):
+    for num in range(2,limit):
+        if is_prime(num):
+            print(num,end = " ")
+
+n = int(input("Enter the limit : "))
+print(f"Prime number less than {n}")
+is_less_prime(n)
 
